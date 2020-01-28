@@ -10,7 +10,7 @@ nav{
     display: flex;
     align-items: center;
     background-color: @yellow;
-    height: 75px;
+    height: 70px;
     ul{
         li{
             display: inline;
@@ -29,12 +29,21 @@ nav{
     height: 250px;
     background-image: url(../img/banner-bg-2.jpg);
     background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
     img{
-        max-width: 200px;
+        margin: auto;
+        max-width: 300px;
+        padding-bottom: 1rem;
+    }
+    .btn-primary{
+        width: 125px;
+        margin: auto;
     }
 }
 .btn-primary {
     color: @black;
+    text-transform: uppercase;
     background-color: @yellow;
     border-color:@yellow;
     &:hover{
@@ -48,8 +57,8 @@ h2{
     text-transform: uppercase;
     padding-top: 2rem;
 }
-.heading-red{
-    color: #ee252f;
+span{
+    .heading-red();
 }
 .best-burgers{
     padding-bottom: 1.7rem;
@@ -66,11 +75,11 @@ h2{
 footer{
     background-color: @black;
     height: 100px;
+    display: flex;
     img{
         max-width: 200px;
         margin: auto;
     }
+    .border-top();
 }
-.border-top {
-    border-top: 8px solid @yellow !important;
-}
+
