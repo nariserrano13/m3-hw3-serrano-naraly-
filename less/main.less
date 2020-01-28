@@ -7,17 +7,26 @@ body{
     color: #050500;
 }
 nav{
+    display: flex;
+    align-items: center;
     background-color: @yellow;
-    height: 100px;
+    height: 75px;
     ul{
         li{
             display: inline;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 0 .75rem;
         }
+        li:hover{
+            color: @red;
+        }
+        margin: 0 0;
     }
 }
 .header{
     width: @width;
-    height: 200px;
+    height: 250px;
     background-image: url(../img/banner-bg-2.jpg);
     background-repeat: repeat;
     img{
